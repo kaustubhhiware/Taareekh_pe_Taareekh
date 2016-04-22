@@ -1,0 +1,150 @@
+
+Test Date Class
+
+Generating format dF1 with parameters d m yy...
+
+Generating format dF2 with parameters d m y...
+
+Invalid argument: Entered format for year is invalid !
+
+
+Generating today's date... using void parameter
+
+Setting dF1 as format..
+
+Printing date and format...
+
+Date : 4-3-16d-m-yy
+
+Generating format dF3 with parameters dd mmm yyyy
+
+Generating today's date with dF3 format
+
+Printing date...
+
+Date : 04-Mar-2016
+Setting dF2 as format and printing...
+
+Date : 04-03-16
+The above should generate date as dd-mm-yy as dF2 will go to default state
+
+Testing if format parameters can be changed to 0... Not printing year
+
+Date : 04-03- 
+Setting dF3 format and trying to print date 12 December 2012 using explicit function
+
+Date : 12-Dec-2012
+Testing Date constructor with day , month , year preset and dF1 as format : d_specific
+
+Date : 12-4-38
+Trying to set date with year 2050
+
+Out of range : Entered year is not valid !
+
+
+Trying invalid triplet of d, m, y... i.e , 29 Feb 2017
+
+Domain error: February does not have these many days
+
+
+Trying other invalid triplet of d, m, y... i.e , 31 Sept 2017
+
+Domain error: Number of days is incorrect
+
+
+Testing operator = ... with d_specific
+
+Date : 12-04-38
+Testing operator++ ...
+
+Date : 13-04-38
+critical date 
+Date : 29-02-16 gives
+Date : 01-03-16
+Testing operator++() ...
+
+Date : 20-04-38
+Testing operator-- ...
+
+Date : 19-04-38
+critical date 
+Date : 01-03-16 gives
+Date : 29-02-16
+Testing copy constructor with
+Date : 29-02-16
+Copy is : 
+Date : 29-02-16
+Testing operator--() ...
+
+Date : 19-04-38gives 
+Date : 12-04-38
+Testing  operator + by adding 100 days
+
+Date : 12-04-38gives 
+Date : 21-07-38
+Testing  operator + by subtracting 100 days
+
+Date : 21-07-38gives 
+Date : 12-04-38
+Testing  operator + by adding 19234 days
+
+Date : 12-04-38gives 
+Cannot perform operation as generated date is out of range
+
+Date : 12-04-38
+Testing operator - subtracting 
+Date : 29-02-16
+Date : 12-04-38 minus 
+Date : 29-02-16 gives 8078 days
+
+Comparison between 
+Date : 12-04-38 & 
+Date : 12-04-38
+== 1
+!= 0
+ > 0
+ < 0
+>= 1
+<= 1
+
+Comparison between 
+Date : 12-04-38 & 
+Date : 29-02-16
+== 0
+!= 1
+ > 1
+ < 0
+>= 1
+<= 0
+
+Testing istream friend function...
+
+Date : 04-03-16
+Testing leapYear function...
+Date : 04-03-16
+It is a leap year
+Testing leapYear function...
+Date : 12-04-38
+Not a leap year
+
+Testing month cast....
+Date : 04-03-16
+ Month number : 3
+
+Date : 12-04-38
+ Month number : 4
+
+Testing weekday cast....
+Date : 04-03-16
+ Weekday : Friday
+Date : 12-04-38
+ Weekday : Monday
+
+Testing weeknumber cast.....
+Date : 04-03-16
+ Week Number : 10
+
+Date : 12-04-38
+ Week Number : 16
+
+Printing from main function...If this gets printed , it means TestDate() worked properly
